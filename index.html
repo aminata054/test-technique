@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teranga AI - Solutions d'Intelligence Artificielle et de Data Science</title>
+    <!-- importe le fichier de style CSS local -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- importe les icônes Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- entête de la page avec navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo-container">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="Teranga AI Logo">
+                    </div>
+                </a>
+                <!-- bouton pour basculer le menu mobile -->
+                <button class="mobile-menu-toggle" id="mobileToggle">
+                    ☰
+                </button>
+                <!-- liste des liens de navigation -->
+                <ul class="nav__menu" id="navMenu">
+                    <li><a href="#models">Modèles</a></li>
+                    <li><a href="#">Tarification</a></li>
+                    <li><a href="#documentation">Documentation</a></li>
+                    <li><a href="#contact"><button class="btn">Contactez-nous</button></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- section héros avec titre principal -->
+        <div class="hero">
+            <h1>Optimisez votre application avec <span>des solutions d'IA de pointe</span></h1>
+        </div>
+
+        <!-- champ de recherche pour les modèles -->
+        <div class="search-container" id="models">
+            <input type="text" placeholder="Rechercher des modèles" class="search-input">
+        </div>
+
+        <!-- modèles -->
+        <section class="models">
+            <div class="model-card">
+                <div class="card-image">
+                    <img src="assets/images/generateur.png" alt="FAQ Generation">
+                </div>
+                <div class="card-title">Générateur de questions booléennes</div>
+                <div class="card-content">
+                    <p>Ce modèle génère des questions oui ou non ainsi que des réponses pertinentes.</p>
+                    <button class="btn">Essayez-le</button>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="card-image">
+                    <img src="assets/images/detection.png" alt="Détection de la langue">
+                </div>
+                <div class="card-title">Détection de la langue</div>
+                <div class="card-content">
+                    <p>Le modèle détecte la langue de n'importe quel texte donné.</p>
+                    <button class="btn">Essayez-le</button>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="card-image">
+                    <img src="assets/images/assistant.png" alt="Assistant d'enseignement">
+                </div>
+                <div class="card-title">Assistant d'enseignement</div>
+                <div class="card-content">
+                    <p>Le but d'un assistant pédagogique est de fournir des cours personnalisés et adaptatifs.</p>
+                    <button class="btn">Essayez-le</button>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="card-image">
+                    <img src="assets/images/zephyr.png" alt="Zephyr-7B">
+                </div>
+                <div class="card-title">Zephyr-7B</div>
+                <div class="card-content">
+                    <p>Zephyr est une série de modèles de langage formés pour agir comme des assistants utiles.</p>
+                    <button class="btn">Essayez-le</button>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="card-image">
+                    <img src="assets/images/effi.png" alt="effi-13b">
+                </div>
+                <div class="card-title">effi-13b</div>
+                <div class="card-content">
+                    <p>Ce modèle est un modèle d'instruction affinées. Il fournit le raisonnement derrière la réponse.
+                    </p>
+                    <button class="btn">Essayez-le</button>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="card-image">
+                    <img src="assets/images/qcm.png" alt="Générateur de QCM">
+                </div>
+                <div class="card-title">Générateur de QCM</div>
+                <div class="card-content">
+                    <p>Ce modèle utilise des modèles Transformer de pointe pour générer des questions ainsi que des
+                        réponses.</p>
+                    <button class="btn">Essayez-le</button>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="card-image">
+                    <img src="assets/images/tutoriel.png" alt="Générer un tutoriel">
+                </div>
+                <div class="card-title">Générer un tutoriel</div>
+                <div class="card-content">
+                    <p>La génération de tutoriel est un type de génération de langage naturel (NLG) qui se concentre sur
+                        la création.</p>
+                    <button class="btn">Essayez-le</button>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="card-image">
+                    <img src="assets/images/diffusion.png" alt="Modèle d'IA de diffusion de texte en image">
+                </div>
+                <div class="card-title">Modèle d'IA de diffusion de texte en image</div>
+                <div class="card-content">
+                    <p>Génerer des images de haute qualité en toute simplicité grâce à un modèle d'IA de pointe.</p>
+                    <button class="btn">Essayez-le</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentation -->
+        <section class="documentation-section" id="documentation">
+            <div class="documentation-container">
+                <h1>Documentation</h1>
+                <p>Découvrez nos guides détaillés pour tirer le meilleur parti de nos modèles d'IA.</p>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">Quel est le coût du forfait de base ? <i
+                                class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Le forfait de base est gratuit avec des limites d'utilisation. Pour des
+                            détails
+                            précis, veuillez consulter notre site officiel.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Dois-je fournir les détails de ma carte de crédit pour m'inscrire
+                            au
+                            forfait ? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Non, l'inscription au forfait de base ne nécessite pas de détails de
+                            carte de
+                            crédit.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">À qui s'adresse le Plan de Base ? <i
+                                class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Le Plan de Base s'adresse aux utilisateurs individuels et aux petites
+                            entreprises souhaitant explorer nos services d'IA.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Quelles sont les limitations concernant les requêtes API et la
+                            taille de la
+                            charge utile pour le plan de base ? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Le plan de base inclut un nombre limité de requêtes API par jour et une
+                            taille
+                            maximale de charge utile. Consultez notre documentation pour les limites exactes.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Combien coûte le plan Entreprise ? <i
+                                class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Pour les informations sur le coût du plan Entreprise, veuillez visiter
+                            https://www.terangaai.com.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">À qui s'adresse le Plan Entreprise ? <i
+                                class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Le Plan Entreprise est conçu pour les grandes organisations nécessitant
+                            des
+                            quotas d'utilisation élevés et un support dédié.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Quels sont les avantages du Plan Entreprise par rapport au Plan
+                            Basic
+                            ? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Le Plan Entreprise offre des quotas d'utilisation plus élevés, un
+                            support
+                            prioritaire et des fonctionnalités avancées par rapport au Plan Basic.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Comment puis-je obtenir plus d'informations et discuter du Plan
+                            Entreprise
+                            ? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">Pour plus d'informations, veuillez consulter https://www.terangaai.com
+                            ou
+                            contactez
+                            notre équipe via la section Contact.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section de contact avec formulaire -->
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+                <h1>Contactez-nous</h1>
+                <p>Collaborez avec nous pour transformer vos idées en solutions d'IA innovantes.</p>
+                <div class="contact-wrapper">
+                    <div class="contact-info side-contact-info">
+                        <h2>Entrez en contact</h2>
+                        <!-- informations de contact -->
+                        <div class="contact-detail">
+                            <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <p>2972, Rte de Rufisque, Dakar, Sénégal</p>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                            <p>(221) 77 447 77 22 | (221) 33 544 55 44</p>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                            <p>contact.teranga.ai@gmail.com</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <!-- formulaire de contact -->
+                    <div class="contact-form side-contact-form">
+                        <h2>Envoyez-nous un message</h2>
+                        <form action="https://formsubmit.co/contact.teranga.ai@gmail.com" method="POST">
+                            <div class="form-group row">
+                                <input type="text" name="name" placeholder="Nom et prénom"
+                                    class="contact-input half-width">
+                                <input type="email" name="email" placeholder="Adresse email"
+                                    class="contact-input half-width" required>
+                            </div>
+                            <div class="form-group row">
+                                <input type="text" id="company" name="company" placeholder="Entreprise"
+                                    class="contact-input" required>
+                                <input type="tel" id="phone" name="phone" placeholder="Numéro *" class="contact-input">
+                            </div>
+
+                            <div class="form-group">
+                                <select id="model" name="model" class="contact-input">
+                                    <option value="">Modèle d'IA</option>
+                                    <option value="générateur de questions booléennes">Générateur de questions
+                                        booléennes</option>
+                                    <option value="détection de la langue">Détection de la langue</option>
+                                    <option value="assistant d'enseignement">Assistant d'enseignement</option>
+                                    <option value="Zephyr-7B">Zephyr-7B</option>
+                                    <option value="effi-13b">effi-13b</option>
+                                    <option value="générateur de QCM">Générateur de QCM</option>
+                                    <option value="générer un tutoriel">Générer un tutoriel</option>
+                                    <option value="modèle d'IA de diffusion de texte en image">Modèle d'IA de diffusion
+                                        de texte en image</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" placeholder="Message"
+                                    class="contact-input" required></textarea>
+                            </div>
+                            <button type="submit" class="btn submit-btn">Envoyer le message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- pied de page avec liens et informations -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <a href="#" class="logo-container">
+                            <div class="logo">
+                                <img src="assets/images/logo.png" alt="Teranga AI Logo">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer-sections">
+                        <div class="footer-section">
+                            <h3>Entreprise</h3>
+                            <ul>
+                                <li><a href="#" class="footer-link">À propos de nous</a></li>
+                                <li><a href="#contact" class="footer-link">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Ressources</h3>
+                            <ul>
+                                <li><a href="#documentation" class="footer-link">Documentation</a></li>
+                                <li><a href="#" class="footer-link">Tarification</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Légal</h3>
+                            <ul>
+                                <li><a href="#" class="footer-link">Conditions générales</a></li>
+                                <li><a href="#" class="footer-link">Politique de confidentialité</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Suivez-nous</h3>
+                            <ul class="footer-social">
+                                <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                            <a href="#" class="social-link"></a>
+                        </div>
+                    </div>
+                    <div class="footer-legal">
+                        <p>© 2025 Teranga AI. Tous droits réservés.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
