@@ -11,6 +11,9 @@ Ce projet est le site web officiel de **Teranga AI**, une plateforme proposant d
 - **script.js** : Gère les interactions dynamiques, comme le basculement du menu mobile et l'affichage des éléments FAQ.
 - **assets/images/** : Contient les images utilisées, telles que le logo et les icônes des modèles.
 
+## Live Démo
+
+Consultez la démo ici 👉️ [terangaai-marketplace.netlify.app](terangaai-marketplace.netlify.app)
 ## Installation
 
 1. Clonez ce dépôt :
@@ -19,7 +22,7 @@ Ce projet est le site web officiel de **Teranga AI**, une plateforme proposant d
    ```
 2. Accédez au dossier du projet :
    ```bash
-   cd test-techique
+   cd test-technique
    ```
 3. Ouvrez `index.html` dans un navigateur pour visualiser le site.
 

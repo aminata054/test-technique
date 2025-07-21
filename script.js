@@ -72,3 +72,12 @@ document.querySelectorAll('.faq-question').forEach(question => {
         });
     });
 });
+
+/* sélectionne l'élément pour afficher l'année */
+const yearElement = document.getElementById('current-year')
+
+/* récupère l'année actuelle */
+const currentYear = new Date().getFullYear()
+
+/* insère l'année dans l'élément */
+yearElement.textContent = currentYear
