@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teranga AI - Contact</title>
+    <!-- importe le fichier de style CSS local -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- importe les icônes Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- entête de la page avec navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <!-- Section gauche : Logo + Menu principal -->
+                <div class="nav__left-section">
+                    <a href="#" class="logo-container">
+                        <div class="logo">
+                            <!-- Placeholder pour le logo -->
+                            <img src="assets/images/logo.png" alt="Teranga AI Logo" class="logo-image">
+                        </div>
+                    </a>
+
+                    <!-- Menu principal (desktop) -->
+                    <ul class="nav__main-menu">
+                        <li><a href="index.html">Modèles</a></li>
+                        <li><a href="tarification.html">Tarification</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section droite : Bouton contact (desktop) -->
+                <div class="nav__right-section">
+                    <a href="contact.html" class="btn">Contactez-nous</a>
+                </div>
+
+                <!-- Bouton menu mobile -->
+                <button class="mobile-menu-toggle" id="mobileToggle">
+                    ☰
+                </button>
+
+                <!-- Menu mobile -->
+                <div class="nav__mobile-menu" id="mobileMenu">
+                    <ul>
+                        <li><a href="index.html">Modèles</a></li>
+                        <li><a href="tarification.html">Tarification</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn">Contactez-nous</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- section de contact avec formulaire -->
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+                <h1>Contactez-nous</h1>
+                <p>Collaborez avec nous pour transformer vos idées en solutions d'IA innovantes.</p>
+                <div class="contact-wrapper">
+                    <div class="contact-info side-contact-info">
+                        <h2>Entrez en contact</h2>
+                        <!-- informations de contact -->
+                        <div class="contact-detail">
+                            <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <p>Voie de Dégagement Nord (VDN), Mermoz, Dakar, Sénégal</p>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                            <p>(221) 77 840 01 61 | (221) 70 825 14 65</p>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                            <p>contact.teranga.ai@gmail.com</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/teranga-ai/?viewAsMember=true"
+                                class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- formulaire de contact -->
+                    <div class="contact-form side-contact-form">
+                        <h2>Envoyez-nous un message</h2>
+                        <form action="https://formsubmit.co/contact.teranga.ai@gmail.com" method="POST">
+                            <div class="form-group row">
+                                <input type="text" name="name" placeholder="Nom et prénom *"
+                                    class="contact-input half-width" required>
+                                <input type="email" name="email" placeholder="Adresse email *"
+                                    class="contact-input half-width" required>
+                            </div>
+                            <div class="form-group row">
+                                <input type="text" id="company" name="company" placeholder="Entreprise *"
+                                    class="contact-input" required>
+                                <input type="tel" id="phone" name="phone" placeholder="Numéro" class="contact-input">
+                            </div>
+
+                            <div class="form-group">
+                                <select id="model" name="model" class="contact-input" required>
+                                    <option value="">Modèle d'IA</option>
+                                    <option value="générateur de questions booléennes">Générateur de questions
+                                        booléennes</option>
+                                    <option value="détection de la langue">Détection de la langue</option>
+                                    <option value="assistant d'enseignement">Assistant d'enseignement</option>
+                                    <option value="Zephyr-7B">Zephyr-7B</option>
+                                    <option value="effi-13b">effi-13b</option>
+                                    <option value="générateur de QCM">Générateur de QCM</option>
+                                    <option value="générer un tutoriel">Générer un tutoriel</option>
+                                    <option value="modèle d'IA de diffusion de texte en image">Modèle d'IA de diffusion
+                                        de texte en image</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" placeholder="Message *"
+                                    class="contact-input" required></textarea>
+                            </div>
+                            <button type="submit" class="btn submit-btn">Envoyer le message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- pied de page avec liens et informations -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo-container">
+                        <div class="logo">
+                            <img src="assets/images/logo.png" alt="Teranga AI Logo">
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-sections">
+                    <div class="footer-section">
+                        <h3>Entreprise</h3>
+                        <ul>
+                            <li><a href="#" class="footer-link">À propos de nous</a></li>
+                            <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Ressources</h3>
+                        <ul>
+                            <li><a href="documentation.html" class="footer-link">Documentation</a></li>
+                            <li><a href="tarification.html" class="footer-link">Tarification</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Légal</h3>
+                        <ul>
+                            <li><a href="#" class="footer-link">Conditions générales</a></li>
+                            <li><a href="#" class="footer-link">Politique de confidentialité</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Suivez-nous</h3>
+                        <ul class="footer-social">
+                            <li><a href="https://www.linkedin.com/company/teranga-ai/?viewAsMember=true"
+                                    class="social-link"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                        <a href="#" class="social-link"></a>
+                    </div>
+                </div>
+                <div class="footer-legal">
+                    <p>© <span id="current-year"></span> Teranga AI. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
