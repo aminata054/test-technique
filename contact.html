@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- importe les icônes Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
             <nav class="nav">
                 <!-- Section gauche : Logo + Menu principal -->
                 <div class="nav__left-section">
-                    <a href="#" class="logo-container">
+                    <a href="index.html" class="logo-container">
                         <div class="logo">
                             <!-- Placeholder pour le logo -->
                             <img src="assets/images/logo.png" alt="Teranga AI Logo" class="logo-image">
@@ -72,7 +73,7 @@
                         </div>
                         <div class="contact-detail">
                             <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <p>(221) 77 840 01 61 | (221) 70 825 14 65</p>
+                            <p> (221) 77 840 01 61 | (221) 70 825 14 65</p>
                         </div>
                         <div class="contact-detail">
                             <span class="contact-icon"><i class="fas fa-envelope"></i></span>
@@ -102,18 +103,26 @@
                             </div>
 
                             <div class="form-group">
-                                <select id="model" name="model" class="contact-input" required>
-                                    <option value="">Modèle d'IA</option>
-                                    <option value="générateur de questions booléennes">Générateur de questions
-                                        booléennes</option>
-                                    <option value="détection de la langue">Détection de la langue</option>
-                                    <option value="assistant d'enseignement">Assistant d'enseignement</option>
-                                    <option value="Zephyr-7B">Zephyr-7B</option>
-                                    <option value="effi-13b">effi-13b</option>
-                                    <option value="générateur de QCM">Générateur de QCM</option>
-                                    <option value="générer un tutoriel">Générer un tutoriel</option>
-                                    <option value="modèle d'IA de diffusion de texte en image">Modèle d'IA de diffusion
-                                        de texte en image</option>
+                                <select id="model" name="model[]" class="contact-input contact-multi-select" multiple
+                                    required>
+                                    <option value="automatic-speech-recognition">Automatic Speech Recognition</option>
+                                    <option value="content-generator">Content Generator</option>
+                                    <option value="auto-code-generator">Auto Code Generator</option>
+                                    <option value="detection-anomalies">Détection d’Anomalies</option>
+                                    <option value="doc-ai-ocr">Doc-AI OCR</option>
+                                    <option value="faq-generator">FAQ Generator</option>
+                                    <option value="knowledge-rag-agent">Knowledge-RAG Agent</option>
+                                    <option value="llama">LLaMA</option>
+                                    <option value="medical-diagnosis">Medical-Diagnosis</option>
+                                    <option value="medical-agent">Medical Agent</option>
+                                    <option value="multilingual-text-to-speech">Multilingual-Text-To-Speech</option>
+                                    <option value="neural-translation-pro">Neural Translation Pro</option>
+                                    <option value="prevision-analytics">Prévision & Analytics</option>
+                                    <option value="question-answering">Question Answering</option>
+                                    <option value="text-summarizer">Text Summarizer</option>
+                                    <option value="text-to-image">Text to Image</option>
+                                    <option value="tts-multilingue">TTS Multilingue</option>
+                                    <option value="chatbot-b2b">Chatbot B2B</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -180,6 +189,22 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modelSelect = document.getElementById('model');
+            new Choices(modelSelect, {
+                removeItemButton: true, // Permettre a l'utilisateur de supprimer des éléments sélectionnés
+                placeholder: true,
+                placeholderValue: 'Sélectionnez des modèles d’IA',
+                searchEnabled: true, // Permettre la recherche dans la liste déroulante
+                itemSelectText: '',
+                maxItemCount: -1, // Pas de limite sur les sélections (ou définir un nombre spécifique)
+                noChoicesText: 'Aucun modèle disponible',
+                noResultsText: 'Aucun résultat trouvé'
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -766,6 +766,67 @@ a {
     background-color: #fff;
 }
 
+.contact-multi-select {
+    height: 150px;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 0.5rem;
+}
+
+.contact-multi-select option {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+.contact-multi-select option:checked {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.choices__inner {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.choices__list--multiple .choices__item {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.choices__list--dropdown {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.choices__input {
+    background-color: #fff;
+    color: var(--text-dark);
+}
+
+.choices__input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(35, 95, 79, 0.1);
+}
+
+.choices__list--multiple .choices__button {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
 .submit-btn {
     width: 100%;
     padding: 0.9rem;
@@ -1114,5 +1175,10 @@ a {
     .btn {
         padding: 0.6rem 1rem;
         font-size: 0.9rem;
+    }
+
+    .contact-multi-select {
+        height: 120px;
+        /* Adjusted height for smaller screens */
     }
 }

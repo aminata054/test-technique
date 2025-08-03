@@ -172,3 +172,4 @@ const currentYear = new Date().getFullYear();
 
 /* Insère l'année dans l'élément */
 yearElement.textContent = currentYear;
+
